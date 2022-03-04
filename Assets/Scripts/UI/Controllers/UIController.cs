@@ -127,7 +127,7 @@ public class UIController : MonoBehaviour
         {
             ScoutBrendan();
         }
-        GameObject reportGO = Instantiate(ScoutReportPrefab);
+    GameObject reportGO = Instantiate(ScoutReportPrefab);
         reportGO.transform.SetParent(transform, false);
         ScoutReportDisplay display = reportGO.GetComponent<ScoutReportDisplay>();
         display.Initialize(Brendan.ScoutReport);
@@ -145,6 +145,8 @@ public class UIController : MonoBehaviour
         report.Availibility = "3 months notice period";
         report.Interest = typekey.Interest.EXTREMELY_INTERESTED;
         report.EstimatedCost = 0.00m;
+        report.EstimatedWageMin = 45.0m;
+        report.EstimatedWageMax = 50.0m;
         report.AddPositiveValues(new List<string>()
         {
             "Confident C# Developer",

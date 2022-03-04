@@ -31,6 +31,6 @@ public class EmploymentDetailDisplay : MonoBehaviour
             EstimatedCostHeaderAndText.Initialize("Estimated Cost", report.EstimatedCost.ToString());
             EstimatedCostHeaderAndText.ValueTMP.AsNegative();
         }
-        EstimatedWageHeaderAndText.Initialize("Estimated Wage", "");
+        EstimatedWageHeaderAndText.Initialize("Estimated Wage", "£" + report.EstimatedWageMin.ToString("00") + "k - £" + report.EstimatedWageMax.ToString("00") + "k");
     }
 }

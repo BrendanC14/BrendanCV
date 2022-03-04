@@ -15,6 +15,6 @@ public class PersonalDetailDisplay : MonoBehaviour
         AgeHeaderAndText.Initialize("Age", player.Age.ToString());
         PositionHeaderAndText.Initialize("Position", player.CurrentPosition);
         TeamHeaderAndText.Initialize("Team", player.CurrentEmployer);
-        WageHeaderAndText.Initialize("Wage", "");
+        WageHeaderAndText.Initialize("Wage", "£45k");
     }
 }
